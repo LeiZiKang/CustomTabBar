@@ -14,6 +14,7 @@
 		302813B528F9D06800328F2F /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 302813B428F9D06800328F2F /* Preview Assets.xcassets */; };
 		302813BC28F9D0FE00328F2F /* TabBarView1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 302813BB28F9D0FE00328F2F /* TabBarView1.swift */; };
 		302813BE28F9DF9900328F2F /* TabBarView2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 302813BD28F9DF9900328F2F /* TabBarView2.swift */; };
+		54C02A912C7C1E8400843F31 /* DynamicColor in Frameworks */ = {isa = PBXBuildFile; productRef = 54C02A902C7C1E8400843F31 /* DynamicColor */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +33,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				54C02A912C7C1E8400843F31 /* DynamicColor in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -100,6 +102,9 @@
 			dependencies = (
 			);
 			name = CustomTabBar;
+			packageProductDependencies = (
+				54C02A902C7C1E8400843F31 /* DynamicColor */,
+			);
 			productName = CustomTabBar;
 			productReference = 302813AA28F9D06300328F2F /* CustomTabBar.app */;
 			productType = "com.apple.product-type.application";
@@ -128,6 +133,9 @@
 				Base,
 			);
 			mainGroup = 302813A128F9D06300328F2F;
+			packageReferences = (
+				54C02A8F2C7C1E8400843F31 /* XCRemoteSwiftPackageReference "DynamicColor" */,
+			);
 			productRefGroup = 302813AB28F9D06300328F2F /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -294,6 +302,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -322,6 +331,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -357,6 +367,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		54C02A8F2C7C1E8400843F31 /* XCRemoteSwiftPackageReference "DynamicColor" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/yannickl/DynamicColor";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		54C02A902C7C1E8400843F31 /* DynamicColor */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 54C02A8F2C7C1E8400843F31 /* XCRemoteSwiftPackageReference "DynamicColor" */;
+			productName = DynamicColor;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 302813A228F9D06300328F2F /* Project object */;
 }

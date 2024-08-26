@@ -24,10 +24,10 @@ struct TabBarView2: View {
     
     @ViewBuilder private var backgroundView: some View {
         LinearGradient(colors: [.init(white: 0.9), .white], startPoint: .top, endPoint: .bottom)
-            .mask {
+            .mask (
                 RoundedRectangle(cornerRadius: 25, style: .continuous)
                     .stroke(lineWidth: 6)
-            }
+            )
             .shadow(color: .black.opacity(0.5), radius: 5, x: 0, y: 8)
             .clipShape(RoundedRectangle(cornerRadius: 25, style: .continuous))
     }
@@ -67,10 +67,13 @@ fileprivate struct TabsLayoutView: View {
                             .fill(
                                 Color.white
                             )
-                            .overlay(content: {
+                            .overlay(
                                 LinearGradient(colors: [.white.opacity(0.0001), tab.color.opacity(0.8)], startPoint: .topLeading, endPoint: .bottomTrailing)
                                     .clipShape(RoundedRectangle(cornerRadius: 13, style: .continuous))
-                            })
+                            , alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
+//                            .overlay{
+//                                
+//                            }
                             .shadow(color: .white, radius: 10, x: -7, y: -7)
                             .shadow(color: tab.color.opacity(0.7), radius: 10, x: 8, y: 8)
                             .matchedGeometryEffect(id: "Selected Tab", in: namespace)

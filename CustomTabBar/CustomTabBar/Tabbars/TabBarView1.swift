@@ -55,11 +55,11 @@ fileprivate struct TabsLayoutView: View {
                     if isSelected {
                         Circle()
                             .shadow(radius: 10)
-                            .background {
+                            .background (
                                 Circle()
                                     .stroke(lineWidth: 15)
                                     .foregroundColor(backgroundColor)
-                            }
+                            )
                             .offset(y: -40)
                             .matchedGeometryEffect(id: "Selected Tab", in: namespace)
                             .animation(.spring(), value: selectedTab)

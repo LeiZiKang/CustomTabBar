@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import DynamicColor
 
 let backgroundColor = Color.init(white: 0.92)
 
@@ -71,13 +72,13 @@ enum Tab: Int, Identifiable, CaseIterable, Comparable {
     var color: Color {
         switch self {
         case .home:
-            return .indigo
+            return Color(hexString: "#4B0082")
         case .game:
             return .pink
         case .apps:
             return .orange
         case .movie:
-            return .teal
+            return Color(hexString: "#008080")
         }
     }
 }
